@@ -16,7 +16,6 @@ body{
 }
 .body_image_1 img{ 
     width: 50%;
-    border-radius: 5px;
 }
 
 .colored_strip_words{
@@ -26,13 +25,24 @@ body{
 }
 
 .contact_bar{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 15px;
     padding: 15px;
     border-bottom: 2px black solid;
     border-bottom-style:double;
+}
+
+.contact_links{
+    display: flex;
+    gap: 15px;
+}
+
+.contact_image{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .contact_bar a{
@@ -62,21 +72,39 @@ body{
     padding: 15px;
 }
 
-.jamie, .dana{
-    display: flex;
-    flex-direction: row;
+img{
+    border-radius: 5px;
 }
 
+.jamie, .dana{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+.jamie_info_right, .jamie_picture_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+
 .main_content{
-    border: 2px black solid;
+    border: 2px black;
+    border-style: solid;
     margin: 30px;
+    background-color: rgb(244, 242, 233);
 }
 
 .short_bio_lba{
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .short_bio_lba p{
-    width: 50%;
+    width: 75%;
 }
