@@ -10,9 +10,13 @@ body{
     margin: 0px;
     background-color: rgb(255, 255, 255);
 }
-.body_image_1 img{
-    
+.body_image_1{
+    display: flex;
+    justify-content: center;
+}
+.body_image_1 img{ 
     width: 50%;
+    border-radius: 5px;
 }
 
 .colored_strip_words{
@@ -25,13 +29,31 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 10px;
-    padding: 10px;
+    gap: 15px;
+    padding: 15px;
     border-bottom: 2px black solid;
     border-bottom-style:double;
+}
+
+.contact_bar a{
+    font-size: 20px;
+    text-decoration: none;
+    color:black;
+    background: red;
+    background: -webkit-linear-gradient(left, plum,floralwhite, mistyrose,turquoise,violet);
+    background: -o-linear-gradient(right,plum,floralwhite, mistyrose,turquoise,violet);
+    background: -moz-linear-gradient(right, plum,floralwhite, mistyrose,turquoise,violet);
+    background: linear-gradient(to right,plum,floralwhite, mistyrose,turquoise,violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: .5px;
     
+}
 
-
+.contact_bar a:hover{
+    transition: .5s;
+    transform: scale(1.08);
+    -webkit-text-stroke: .6px;
 }
 
 .logo_container{
@@ -43,4 +65,18 @@ body{
 .jamie, .dana{
     display: flex;
     flex-direction: row;
+}
+
+.main_content{
+    border: 2px black solid;
+    margin: 30px;
+}
+
+.short_bio_lba{
+    display: flex;
+    justify-content: center;
+}
+
+.short_bio_lba p{
+    width: 50%;
 }
