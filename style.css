@@ -147,14 +147,20 @@ img{
 }
 
 @media (max-width: 480px) {
-
+    .jamie_info_right p, .dana_info p{
+        font-size: 10px;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
-
+    .jamie_info_right p, .dana_info p{
+        font-size: 15px;
+    }
 }
 
 @media (min-width: 1025px) {
-
+    .jamie_info_right p, .dana_info p{
+        font-size: 20px;
+    }
 }
 
