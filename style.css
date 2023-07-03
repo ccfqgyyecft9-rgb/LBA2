@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
 html {
     box-sizing: border-box;
         
 }
   *, *:before, *:after {
     box-sizing: inherit;
+    font-family: 'Lora', serif;
   }
 
 body{
@@ -16,7 +19,7 @@ body{
 }
 .body_image_1 img{ 
     width: 60%;
-    height: 450px;
+    height: auto;
 }
 
 .colored_strip_words{
@@ -80,7 +83,7 @@ body{
 }
 
 .dana_picture img{
-    box-shadow: 30px 30px rgb(244, 242, 233);
+    box-shadow: 30px 30px white;
     width: 100%;
     max-width: 400px;
 }
@@ -100,13 +103,30 @@ img{
     border-radius: 5px;
 }
 
-.jamie, .dana{
+.dana, .jamie{
+    padding-bottom: 50px;
+}
+
+.dana{
+    background-color: rgb(244, 242, 233);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.jamie{
     background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 50px;
     flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .jamie_info_right p, .dana_info p{
@@ -128,12 +148,16 @@ img{
     box-shadow: -30px 30px rgb(244, 242, 233);
     width: 100%;
     max-width: 400px;
-
 }
+
 
 .main_content{
     margin: 30px;
     background-color: rgb(244, 242, 233);
+}
+
+p{
+    line-height: 1.5;
 }
 
 .short_bio_lba{
@@ -146,21 +170,52 @@ img{
     width: 75%;
 }
 
-@media (max-width: 480px) {
-    .jamie_info_right p, .dana_info p{
-        font-size: 10px;
+@media (max-width: 625px) {
+    .dana{
+        flex-direction: column-reverse;
+    }
+    
+    .jamie{
+        flex-direction: column;
+    }
+    .jamie_info_right, .jamie_picture_left, .dana_info, .dana_picture{
+        width:100%;
+    }
+    .jamie, .dana{
+        justify-content: space-between;
+        gap: 50px;
+    }
+    .jamie_info_right p, .dana_info p, .short_bio_lba p{
+        font-size: 12px;
+    }
+    .clinicpic1{
+        display: none;
+    }
+    .clinicpic3{
+        display:none;
     }
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {
-    .jamie_info_right p, .dana_info p{
-        font-size: 15px;
+@media (min-width: 625px) and (max-width: 1024px) {
+    .jamie_info_right p, .dana_info p, .short_bio_lba p{
+        font-size: 16px;
+    }
+    .clinicpic1{
+        display: none;
+    }
+    .clinicpic2{
+        display:none;
     }
 }
 
 @media (min-width: 1025px) {
-    .jamie_info_right p, .dana_info p{
+    .jamie_info_right p, .dana_info p, .short_bio_lba p{
         font-size: 20px;
     }
+    .clinicpic2{
+        display: none;
+    }
+    .clinicpic3{
+        display:none;
+    }
 }
-
