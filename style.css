@@ -105,28 +105,22 @@ img{
 
 .dana, .jamie{
     padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    
 }
 
 .dana{
     background-color: rgb(244, 242, 233);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 50px;
-    flex-wrap: wrap;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 .jamie{
     background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 50px;
-    flex-wrap: wrap;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 .jamie_info_right p, .dana_info p{
@@ -164,6 +158,7 @@ p{
     display: flex;
     justify-content: center;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .short_bio_lba p{
