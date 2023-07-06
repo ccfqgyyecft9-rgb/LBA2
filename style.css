@@ -78,6 +78,8 @@ body{
 }
 
 .dana_info{
+    display: flex;
+    flex-direction: column;
     padding-right: 10px;
     padding-right: 10px;
 }
@@ -135,9 +137,17 @@ img{
 }
 
 .jamie_info_right{
+    display: flex;
+    flex-direction: column;
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.jamie_info_right img, .dana_info img{
+    width: 100%;
+    max-width: 100px;
+}
+
 .jamie_picture_left img{
     box-shadow: -30px 30px rgb(244, 242, 233);
     width: 100%;
