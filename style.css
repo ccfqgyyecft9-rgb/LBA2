@@ -50,7 +50,7 @@ body{
 }
 
 .contact_bar a{
-    font-size: 20px;
+    font-size: 24px;
     text-decoration: none;
     color:black;
     background: red;
@@ -167,6 +167,7 @@ p{
 
 .short_bio_lba{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     padding-bottom: 10px;
