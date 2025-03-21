@@ -117,6 +117,7 @@ body{
     border-radius: 1.5rem;
     font-size: 1.3em;
     padding: 12px;
+    color: black;
 }
 
 .insurance_container button:hover{
